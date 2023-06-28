@@ -1,0 +1,76 @@
+body {
+    background-color: rgb(113, 141, 162);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.card {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+display: grid;
+grid-template-columns: 400px 1fr;
+width: 940px;
+background-color: aliceblue;
+}
+.text {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 70px;
+    padding-bottom: 46px;
+    grid-template-rows: 100px 15px 20px 165px 100px;
+}
+h1{
+    grid-row: 1/2;
+}
+.line{
+    grid-row: 2/3;
+    height: 3px;
+    width: 400px;
+    background-color: black;
+}
+h5 {
+    grid-row: 3/4;
+}
+p {
+    padding-top: 40px;
+    grid-row: 4/5;
+}
+.image {
+    grid-column: 1/2;
+    width: 400px;
+    height: 505px;
+}
+.details{
+    grid-row: 5/6;
+    display: grid;
+    grid-template-columns: 12px 12px 12px 12px 1fr;
+}
+.box1 {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    grid-column: 1/2;
+}
+.box3 {
+    grid-column: 3/4;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+}
+.box4 {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    grid-column: 4/5;
+}
+.box2 {
+    width: 10px;
+    grid-column: 2/3;
+    height: 10px;
+    background-color: darkgray;
+}
+.quotes {
+    width: 30px;
+    height: 30px;
+    grid-column: 6/7;
+}

@@ -1,0 +1,62 @@
+body{
+    color: white;
+    text-align: center;
+    margin: 150px;
+}
+
+h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+h2{
+   font: 100;
+    text-align: center;
+}
+
+img{
+    width: 175px;
+}
+
+#black{
+    color: black;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#hover:hover{
+
+color:black
+
+}
+
+#p2
+
+{
+font-family: 'Times New Roman', Times, serif;
+font-size: 10px;
+
+
+}
+
+#p3
+
+{
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+}
+#bottom{
+    color: black;
+    text-align: center;
+    font-family: 'Arial', Times, serif;
+    font-size: 10px;
+}
+
+.align{
+
+    text-align: center;
+    
+}

@@ -1,171 +1,221 @@
-.body {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: aliceblue;
+body {
+  background-color: #063370;
+  color: rgb(82, 82, 82);
+  font-family: Raleway, Arial, sans-serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
 }
-.header {
-    grid-row: 1/2;
+/*header stuff*/
+header {
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  padding: 10px;
+  background-color: #063370;
+  justify-content: center;
 }
-.footer {
-    grid-row: 5/6;
+.logotext{
+  color:aliceblue;
+  grid-row: 1/2;
+  grid-column: 3/4;
+  font-size: 50px;
+  justify-self: start;
 }
-:root {
-    /* change the values below to your colors from your palette */
-    --primary-color: #0077B6  ;
-    --secondary-color: #CAF0F8 ;
-    --accent1-color: #03045E;
-    --accent2-color: white;
-  
-    /* change the values below to your chosen font(s) */
-    --heading-font: "Sans-serif";
-    --paragraph-font: Lato, Helvetica, serif;
-  
-    /* these colors below should be chosen from among your palette colors above */
-    --headline-color-on-white: #396E94;  /* headlines on a white background */ 
-    --headline-color-on-color: white; /* headlines on a colored background */ 
-    --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
-    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-    --paragraph-background-color: #396E94  ;
-    --nav-link-color: #396E94;
-    --nav-background-color: #D4AC0D;
-    --nav-hover-link-color: white;
-    --nav-hover-background-color: #396E94;
-  }
-  
-  
-  /*  Look around below...but DON'T CHANGE ANYTHING! */
-  
-  body {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 4em;
-    font-size: 18px;
-    text-align: center;
-  }
-  img {
-    display: block;
-    margin: 0 auto;
-    max-width: 300px;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--headline-color-on-white);
-  }
-  h2 {
-    text-align: center;
-  }
-  hr {
-    height: 3px;
-    margin: 35px 0;
-    background: var(--accent1-color);
-  }
-  header {
-    padding: 1em;
-    text-align: center;
-    color: var(--headline-color-on-color);
-    background-color: var(--paragraph-background-color);
-  }
-  header > h1, header > h2 {
-    color: var(--headline-color-on-color);
-  }
-  p {
-    font-family: var(--paragraph-font);
-    color: var(--paragraph-color-on-white);
-    padding: 1em;
-  }
-  .colors {
-    width: 100%;
-    min-width: 350px;
-    margin: 30px auto;
-    text-align: center;
-  }
-  .colors th {
-    background-color: #999;
-  }
-  .colors td{
-    width: 25%;
-    height: 3em;
-  }
-  .primary {
-    background-color: var(--primary-color);
-  }
-  .secondary {
-    background-color: var(--secondary-color);
-  }
-  .accent1 {
-    background-color: var(--accent1-color);
-  }
-  .accent2{
-    background-color: var(--accent2-color);
-  }
-  p.colored {
-    background-color: var(--paragraph-background-color);
-    color: var(--paragraph-color-on-color);
-  }
-  nav {
-    background-color: var(--nav-background-color);
-    line-height: 3em;
-    text-align: center;
-    font-size: 1.2em;
-  }
-  nav  {
-    list-style-type: none;
-    display: flex;
-  }
-  nav a {
-    padding:1em;
-    min-width: 120px;
-    text-decoration: none;
-    padding: 10px;
-  }
-  nav a:link, nav a:visited {
-    color: var(--nav-link-color);
-  }
-  nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
-  }
-  .sitemap {
-    display: grid;
-    justify-content: center;
-  
-    grid-template-columns: repeat(6, 15%);
-    grid-template-rows: 3em 1.5em 1.5em 3em;
-    grid-template-areas: ". . home home . ."
-      ". . . top . ."
-      ". left left right right ."
-      "page2 page2 . . page3 page3";
-  }
-  .sitemap > div {
-    text-align: center;
-  }
-  .sm-home {
-    grid-area: home;
-    background-color: #ccc;
-    line-height: 3em;
-  }
-  .sm-page2 {
-    grid-area: page2;
-    background-color: #ccc;
-    line-height: 3em;
-  }
-  .sm-page3 {
-    grid-area: page3;
-    background-color: #ccc;
-    line-height: 3em;
-  }
-  .top {
-    grid-area: top;
-    border-left: 1px solid;
-  }
-  .left {
-    grid-area: left;
-    border-top: 1px solid;
-    border-left: 1px solid;
-  }
-  .right {
-    grid-area: right;
-    border-top: 1px solid;
-    border-right: 1px solid;
-  }
+#logo_link {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  justify-self: end;
+  margin-right: 10px;
+}
+.logo {
+  width: 100px;
+  border-radius: 35px;
+}
+nav {
+  grid-row: 2/3;
+  grid-column: 1/6;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-self: center;
+  gap: 50px;
+}
+.home {
+  justify-self: center;
+  grid-column: 1/2;
+}
+.archive {
+  justify-self: center;
+  grid-column: 2/3;
+}
+.siteplan {
+  justify-self: center;
+  grid-column: 3/4;
+}
+.aboutus {
+  justify-self: center;
+  grid-column: 4/5;
+}
+nav ul {
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+nav a:hover {
+  color: #FFCB09;
+}
+/*end header stuff*/
+footer {
+  background-color: aliceblue;
+  color: rgb(82, 82, 82);
+  padding: 25px 50px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer p {
+  font-size: 1.2em;
+}
+
+footer p a:hover {
+  text-decoration: underline;
+}
+.parenthome {
+  display: grid;
+  justify-self: center;
+  justify-content: center;
+  grid-template-rows: 1fr 1fr 1fr ;
+}
+.home1 {
+  grid-row: 1/2;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.img1 {
+  width: 120%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.button {
+  background-color: #FFCB09;
+  width: 250px;
+  height: 100px;
+  border-radius: 25px;
+  font-family: Raleway, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  border-color: #063370;
+  border-width: 15px;
+}
+.button:hover {
+  background-color: aliceblue;
+}
+.home2 {
+  grid-row: 2/3;
+  background-color: #063370;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  text-align: center;
+  z-index: -2;
+}
+.home2left {
+  grid-column: 1/2;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.img2 {
+  justify-self: center;
+  position: absolute;
+  z-index: -1;
+  height: 90%;
+  width: inherit;
+  margin-top: 1%;
+  border-radius: 5px;
+  border-color: #FFCB09;
+  border-width: 10px;
+  border-style: solid;
+}
+.h2button {
+  background-color: #FFCB09;
+  width: 250px;
+  height: 100px;
+  border-radius: 25px;
+  font-family: Raleway, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  border-color: #063370;
+  border-width: 15px;
+  grid-row: 1/2;
+  justify-self: center;
+  margin-top: 15%;
+}
+.h2button:hover {
+  background-color: aliceblue;
+}
+.h2p{
+  grid-row: 2/3;
+  background-color: #345EAF;
+  justify-self: center;
+  width: 50%;
+  height: 50%;
+  padding: 15px;
+  border-radius: 15px;
+  color: aliceblue;
+  border-width: 5px;
+  border-color: aliceblue;
+  border-style: solid;
+  margin-top: 0%;
+}
+.home2right {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.home3 {
+  grid-row: 3/4;
+  color: aliceblue;
+}
+.h3title {
+  background-color: #345EAF;
+  border: #FFCB09;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 5px;
+  margin-left: 4%;
+  width: 50%;
+  padding: 5px;
+}
+.h3p {
+  background-color: #345EAF;
+  border: aliceblue;
+  border-radius: 5px;
+  border-width: 3px;
+  border-style: solid;
+  width: 90%;
+  margin-left: 4%;
+  padding: 5px;
+}
+button:hover {
+  background-color: aliceblue;
+}

@@ -8,6 +8,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+img {
+  width: 200px;
+}
 /*header stuff*/
 header {
   display: grid;
@@ -97,6 +100,9 @@ footer p {
 
 footer p a:hover {
   text-decoration: underline;
+}
+.socialimg {
+  width: 50px;
 }
 .parenthome {
   display: grid;
@@ -219,3 +225,57 @@ footer p a:hover {
 button:hover {
   background-color: aliceblue;
 }
+.archive {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+.archivetitle {
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+.arc1{
+  grid-column: 2/3;
+  width: 70%;
+  margin-left: 10%;
+  background-color: #345EAF;
+  color: aliceblue;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: #FFCB09;
+  border-style: solid;
+  border-width: 5px;
+  font-size: 40px;
+}
+.arcimg {
+  grid-column: 1/2;
+  justify-self: center;
+  margin-top: -56%;
+  width: 75%;
+  margin-left: 7%;
+  border: aliceblue;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 5px;
+}
+table {
+  margin-top: 10%;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 3px solid #FFCB09;
+      padding: 8px;
+      text-align: center;
+    }
+    tr{
+      color: aliceblue;
+    }
+    th {
+      background-color: #063370;
+      color: aliceblue;
+    }
+    tr:nth-child(even) {
+      background-color:#345EAF;
+    }

@@ -179,7 +179,7 @@ footer p a:hover {
 .h2button:hover {
   background-color: aliceblue;
 }
-.h2p{
+.h2p {
   grid-row: 2/3;
   background-color: #345EAF;
   justify-self: center;
@@ -279,3 +279,70 @@ table {
     tr:nth-child(even) {
       background-color:#345EAF;
     }
+.aumain {
+  display: grid;
+  grid-template-rows: 1fr 2.5fr;
+  color: aliceblue;
+}
+.autop {
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #FFCB09;
+  justify-content: center;
+  align-items: center;
+}
+.auimg {
+  grid-column: 1/2;
+  width: 75%;
+  justify-self: center;
+  margin-top: -35%;
+  border: #345EAF;
+  border-radius: 15px;
+  border-width: 5px;
+  border-style: solid;
+}
+.autitle {
+  grid-column: 2/3;
+  justify-self: center;
+  text-align: center;
+  font-size: 50px;
+  background-color: #063370;
+  border: #345EAF;
+  border-radius: 15px;
+  border-width: 5px;
+  border-style: solid;
+  width: 75%;
+  margin-bottom: -18%;
+  padding: 5px;
+  margin-top: 10%;
+}
+.aumid {
+  grid-row: 2/3;
+  margin-top: 7%;
+}
+.ausocials {
+  justify-self: center;
+  text-align: center;
+  margin-top: 10%;
+}
+.auh2{
+  background-color: #345EAF;
+  border: #FFCB09;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 5px;
+  margin-left: 4%;
+  width: 50%;
+  padding: 5px;
+}
+.aup{
+  background-color: #345EAF;
+  border: aliceblue;
+  border-radius: 5px;
+  border-width: 3px;
+  border-style: solid;
+  width: 90%;
+  margin-left: 4%;
+  padding: 5px;
+}
